@@ -1,7 +1,7 @@
 package com.epam.ta.tests;
 
 import com.epam.ta.driver.DriverSingleton;
-import com.epam.ta.listeners.TestListeners;
+import com.epam.ta.utils.TestListeners;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

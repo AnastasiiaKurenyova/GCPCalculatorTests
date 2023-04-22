@@ -2,7 +2,7 @@
 
 <suite name="Smoke" verbose="1" >
     <listeners>
-        <listener class-name="com.epam.ta.listeners.TestListeners"></listener>
+        <listener class-name="com.epam.ta.utils.TestListeners"></listener>
     </listeners>
     <test name="GCPCalculatorSmoke"   >
         <classes>

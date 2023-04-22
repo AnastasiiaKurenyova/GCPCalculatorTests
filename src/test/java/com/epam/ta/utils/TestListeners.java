@@ -1,10 +1,14 @@
-package com.epam.ta.listeners;
+package com.epam.ta.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+
+import static com.epam.ta.utils.SaveScreenshot.saveScreenshot;
+
 
 public class TestListeners implements ITestListener {
 
@@ -22,7 +26,7 @@ public class TestListeners implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-
+        saveScreenshot();
     }
 
     @Override
@@ -44,4 +48,6 @@ public class TestListeners implements ITestListener {
     public void onFinish(ITestContext context) {
 
     }
+
+
 }
