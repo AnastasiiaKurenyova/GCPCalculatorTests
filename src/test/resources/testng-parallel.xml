@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel" verbose="1" parallel="methods" thread-count="2">
+    <test name="GCPCalculatorParallel"   >
+        <classes>
+            <class name="com.epam.ta.tests.GCPCalculatorTest" />
+            <class name="com.epam.ta.tests.GCPCalculatorSmokeTest" />
+        </classes>
+    </test>
+</suite>
